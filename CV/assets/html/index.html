@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/lib/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+
+    <title>Generador de cv</title>
+</head>
+
+<body>
+    <h1>Generador de CV</h1>
+
+    <div class="container mt-5">
+
+        <div class="col-6 offset-3">
+            <div class="card">
+                <div class="card-header bg-body">
+                    <h4 class="text-center">Registre su CV</h4>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4 class="sub">Debe llenar todas las informaciones sugeridas</h4>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="Name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Direcci&oacute;n:</label>
+                        <input type="text" class="form-control" id="Address">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo:</label>
+                        <input type="email" class="form-control" id="Email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="number" class="form-label">tel&eacute;fono:</label>
+                        <input type="text" class="form-control" id="Number">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="website" class="form-label">P&aacute;gina Web:</label>
+                        <input type="text" class="form-control" id="Website">
+                    </div>
+
+                    <label for="summary" class="form-label">Resumen:</label>
+                    <div class="mb-3">
+                        <textarea name="about" rows="5" cols="80" id="Summary"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="languajes" class="form-label">Idiomas:</label>
+                        <input type="text" class="form-control" id="Languajes">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="jobs" class="form-label">Empleos:</label>
+                        <input type="text" class="form-control" id="Jobs">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="education" class="form-label">Educaci&oacute;n:</label>
+                        <input type="text" class="form-control" id="Education">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="skills" class="form-label">Skills o habilidades:</label>
+                        <input type="text" class="form-control" id="Skills">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="certifications" class="form-label">Certificaciones:</label>
+                        <input type="text" class="form-control" id="Certifications">
+                    </div>
+
+                </div>
+                <div class="mb-2">
+                    <button onclick="generarCV()" type="button" class="btn btn-primary offset-sm-3">Generar CV</button>
+                    <button onclick="limpiarCampos()" type="button" class="btn btn-warning">Limpiar Campos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+    <div id="cv-container">
+
+    </div>
+
+    <br>
+
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
